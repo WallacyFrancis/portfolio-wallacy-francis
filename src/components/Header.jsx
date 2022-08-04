@@ -1,33 +1,32 @@
 import React from "react"
-import { Col, Nav, Row, Container, Navbar } from "react-bootstrap";
-import {Title, NavItem} from "./styles";
+import { Nav, Container, Navbar, Offcanvas } from "react-bootstrap";
+import { HeaderContent } from "./styles"
 
 export default function Header() {
   return (
     <>
-      <header>
-        <Container>
-          <Row>
-            <Col lg="8" sm="8">
-              <Title>Wallacy Francis</Title>
-            </Col>
-            <Col lg="4" sm="4">
-              <Navbar expand="md">
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse>
-                  <Nav>
-                    <Nav.Link href="#home"><NavItem>Home</NavItem></Nav.Link>
-                    <Nav.Link href="#about"><NavItem>Sobre</NavItem></Nav.Link>
-                    <Nav.Link href="#skills"><NavItem>Habilidades</NavItem></Nav.Link>
-                    <Nav.Link href="#projects"><NavItem>Projetos</NavItem></Nav.Link>
-                    <Nav.Link href="#contact"><NavItem>Contato</NavItem></Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
-              </Navbar>
-            </Col>
-          </Row>
-        </Container>
-      </header>
+      <HeaderContent bg="light">
+        <Navbar expand="md" className="mb-3">
+          <Container fluid>
+            <Navbar.Brand href="#">Wallacy Francis</Navbar.Brand>
+            <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
+            <Navbar.Offcanvas
+              aria-labelledby="offcanvasNavbarLabel-expand-md"
+              placement="end"
+            >
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="#home">Home</Nav.Link>
+                  <Nav.Link href="#about">Sobre mim</Nav.Link>
+                  <Nav.Link href="#skills">Habilidades</Nav.Link>
+                  <Nav.Link href="#projects">Projetos</Nav.Link>
+                  <Nav.Link href="#contact">Contato</Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      </HeaderContent>
     </>
-  )
+  );
 }
