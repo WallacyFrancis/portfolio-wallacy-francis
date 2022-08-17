@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Container, Content, Ul, Li, TitleProject, Url, Created_at } from './styles'
+import { Container, Content, Ul, Li, TitleProject, Url, Created_at } from '../../../styles/projectStyles'
 import { Anchor } from '../../../styles/indexStyles'
 
 export default function Projects() {
