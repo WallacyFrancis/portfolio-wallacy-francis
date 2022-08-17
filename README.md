@@ -17,11 +17,11 @@ yarn dev
 O servidor está configurado para que a aplicaçõ rode em [http://localhost:3000](http://localhost:3000)
 
 
-## Tecnologias
+### Tecnologias
 
 Para o desenvolvimento deste portifólio pessoal, utilizei a framework NextJs com styled-components
 
-## Visite o link deste projeto em
+### Visite o link deste projeto em
 
 
 
