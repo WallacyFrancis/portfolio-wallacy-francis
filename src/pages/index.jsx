@@ -13,7 +13,7 @@ export default function Home() {
           Tenho experiências em desenvolvimento com:
           Html, CSS, JavaScript, React, Typescript, Node, Sql, MongoDB, Docker, Python, Jest, Cypress, entre outros.
           Sou apaixonado por tecnologia e busco sempre me desenvolver estudando e adquirindo experiências.
-          Entre em <Anchor href="#">contato</Anchor> comigo para que possamos bater um papo e descutir sobre tecnologias
+          Entre em <Anchor href="https://portfolio-wallacy-francis.vercel.app/contact">contato</Anchor> comigo para que possamos bater um papo e descutir sobre tecnologias
           e de mais assuntos web
         </Intro>
         <Link href="projects">
